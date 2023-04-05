@@ -1,4 +1,4 @@
-name: 'AWS EC2 Instance State Action'
+name: 'AWS EC2 Instance State'
 description: 'Starts, stop, terminates, and reboots EC2 instances'
 author: 'TrueMark'
 inputs:
