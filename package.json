@@ -1,8 +1,8 @@
 {
-  "name": "typescript-action",
+  "name": "aws-ec2-state-action",
   "version": "0.0.0",
   "private": true,
-  "description": "TypeScript template action",
+  "description": "GitHub action to start, stop, or terminate an EC2 instance",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/truemark/aws-ec2-state-action.git"
   },
   "keywords": [
     "actions",
@@ -25,7 +25,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.10.0"
+    "@actions/core": "^1.10.0",
+    "@aws-sdk/client-ec2": "^3.306.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.0",

@@ -2,10 +2,15 @@ name: 'Your name here'
 description: 'Provide a description here'
 author: 'Your name or organization here'
 inputs:
-  milliseconds: # change this
+  instance-ids:
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    description: 'Instance IDs to perform action on'
+  region:
+    required: true
+    description: 'AWS region to use'
+  action:
+    required: true
+    description: 'Action to perform: start, stop, reboot, hibernate or terminate'
 runs:
   using: 'node16'
   main: 'dist/index.js'
